@@ -1,0 +1,109 @@
+
+$color_black: #444
+$color_yellow: #FFF196
+$color_green: #006E8C
+$color_white: #F2FBFC
+$color_lightgreen: #8BB8C4
+
+*
+  // border: solid 1px
+  position: relative
+  font-family: 'Gloria Hallelujah', 微軟正黑體
+
+html,body
+  width: 100%
+  height: 100%
+  margin: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  background-image: url("https://www.lifeofpix.com/wp-content/uploads/2014/09/2-Life-of-Pix-free-stock-photos-hands-desk-swatch-Damian-zaleski-1600x821.jpg")
+  background-position: center center
+  background-size: cover
+  
+#buylist
+  display: inline-block
+  padding: 20px
+  // border: solid 4px $color_black
+  background-color: $color_white
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.2)
+  
+h1
+  padding: 10px 20px
+  margin-top: -10px
+  margin-left: -20px
+  margin-right: -20px
+  margin-bottom: 10px
+  // border-bottom: solid 4px $color_black
+  background-color: $color_white
+  color: black
+  text-align: center
+  font-weight: 600
+  
+  
+#items_list
+  padding: 5px
+  margin-top: 5px
+  
+
+.buy_item
+  padding: 5px
+  list-style: none
+  border-bottom: solid 1px rgba($color_black,0.5)
+  margin-top: 10px
+  font-weight: 900
+  font-size: 16px
+
+  & input
+    width: 100px
+    border: solid 3px
+    padding: 2px
+  & .price
+    display: inline-block
+    position: absolute
+    padding-left: 8px
+    padding-right: 8px
+    right: 50px
+    background-color: $color_white
+    
+    &::after
+      content: " $"
+    
+  & .del_btn
+    display: inline-block
+    position: absolute
+    padding: 0px 6px
+    right: 10px
+    cursor: pointer
+
+    
+    &:hover
+      background-color: $color_lightgreen
+      color: white
+    
+  & .addbtn
+    cursor: pointer
+    margin-left: 10px
+    padding: 5px
+    border: solid 4px $color_green
+    background-color: $color_white
+    color: $color_green
+    font-weight: 700
+    
+    &:hover
+      background-color: $color_lightgreen
+      border: solid 4px $color_lightgreen
+      color: white
+  
+    
+.control_panel
+  padding-left: 20px
+  padding-right: 20px
+  padding-bottom: 20px
+    
+.total
+  // background-color: $color_white
+  color: $color_green
+  font-size: 20px
+  & .price
+    background-color: transparent

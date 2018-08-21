@@ -1,0 +1,105 @@
+@charset "UTF-8";
+* {
+  position: relative;
+  font-family: "Gloria Hallelujah", 微軟正黑體;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://www.lifeofpix.com/wp-content/uploads/2014/09/2-Life-of-Pix-free-stock-photos-hands-desk-swatch-Damian-zaleski-1600x821.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+#buylist {
+  display: inline-block;
+  padding: 20px;
+  background-color: #F2FBFC;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  padding: 10px 20px;
+  margin-top: -10px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 10px;
+  background-color: #F2FBFC;
+  color: black;
+  text-align: center;
+  font-weight: 600;
+}
+
+#items_list {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.buy_item {
+  padding: 5px;
+  list-style: none;
+  border-bottom: solid 1px rgba(68, 68, 68, 0.5);
+  margin-top: 10px;
+  font-weight: 900;
+  font-size: 16px;
+}
+.buy_item input {
+  width: 100px;
+  border: solid 3px;
+  padding: 2px;
+}
+.buy_item .price {
+  display: inline-block;
+  position: absolute;
+  padding-left: 8px;
+  padding-right: 8px;
+  right: 50px;
+  background-color: #F2FBFC;
+}
+.buy_item .price::after {
+  content: " $";
+}
+.buy_item .del_btn {
+  display: inline-block;
+  position: absolute;
+  padding: 0px 6px;
+  right: 10px;
+  cursor: pointer;
+}
+.buy_item .del_btn:hover {
+  background-color: #8BB8C4;
+  color: white;
+}
+.buy_item .addbtn {
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 5px;
+  border: solid 4px #006E8C;
+  background-color: #F2FBFC;
+  color: #006E8C;
+  font-weight: 700;
+}
+.buy_item .addbtn:hover {
+  background-color: #8BB8C4;
+  border: solid 4px #8BB8C4;
+  color: white;
+}
+
+.control_panel {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.total {
+  color: #006E8C;
+  font-size: 20px;
+}
+.total .price {
+  background-color: transparent;
+}
