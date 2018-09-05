@@ -1,7 +1,6 @@
-@charset "UTF-8";
 * {
   position: relative;
-  font-family: "Gloria Hallelujah", 微軟正黑體;
+  font-family: "Roboto", sans-serif;
 }
 
 html, body {
@@ -11,7 +10,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("https://www.lifeofpix.com/wp-content/uploads/2014/09/2-Life-of-Pix-free-stock-photos-hands-desk-swatch-Damian-zaleski-1600x821.jpg");
+  background-image: url("https://source.unsplash.com/ditBivP-52Q/1600x900");
   background-position: center center;
   background-size: cover;
 }
